@@ -1,0 +1,269 @@
+.about-container {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.about-text {
+  flex: 1;
+  animation: slideUp 0.8s ease-in-out forwards;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  color: #0f4c81;
+  font-family: 'Trebuchet MS';
+}
+
+.about-text h1 span {
+  color: #00bfa6;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Mission Section */
+.about-mission {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.mission-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  width: 280px;
+}
+
+.card:hover {
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 20px #4458dc;
+}
+
+.card h3 {
+  color: #854fee;
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline Section */
+.about-process {
+  padding: 80px 20px;
+  background-size: cover;
+  text-align: center;
+}
+.about-process h2{
+   font-family: 'Trebuchet MS';
+   color: #4458dc;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a; /* dark navy */
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 50px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.process-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 2px 15px #4458dc;
+}
+
+.icon {
+  background: #e0f2fe; /* light blue */
+  color: #0284c7; /* main blue */
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover .icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.process-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .service-card{
+    flex-direction: column;
+    width: 280px;
+  }
+  .service-card img{
+    height: 60%;
+  }
+ 
+}
+
+
+
+/*services section*/
+#service{
+  padding-top: 100px;
+}
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+   color: #4458dc;
+   font-family: 'Trebuchet MS';
+}
+.process-grid2{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+ margin: auto;
+ max-width: 1100px;
+ gap: 20px;
+}
+.service-card{
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+   transition: all 0.3s ease;
+   position: relative;
+   background-color: rgba(245, 231, 214, 0.384) ;
+   display: flex;
+}
+.service-card img{
+  height: 100%;
+  width: 250px;
+  border-radius: 10px;
+}
+.service-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 2px 15px #4458dc;
+}
+.card-body{
+  padding: 10px;
+  
+}
+.card-body p{
+  color: #64748b;
+}
+
+.card-body img{
+  position: absolute;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  right: -20px;
+}
+
+.service-btn{
+  height: 70px;
+  margin: auto;
+  text-align: right;
+  margin-top: 80px;
+}
+

@@ -1,0 +1,129 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  color: black;
+  overflow: hidden;
+ 
+}
+.contact-img{
+  height: 300px;
+  width: 300px;
+  flex: 1;
+  text-align: center;
+}
+.contact-img img{
+  height: 100%;
+  width: 100%;
+}
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4458dc;
+   font-family: 'Trebuchet MS';
+}
+
+.contact-left p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: cyan;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right h3 {
+  margin-bottom: 20px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #854fee;
+  font-size: 1rem;
+  resize: none;
+  border: 1px solid #4458dc;
+}
+.contact-right textarea{
+  height: 160px;
+  font-size: 1rem;
+    font-family: 'Trebuchet MS';
+}
+
+.contact-right button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  transform: scale(1.05);
+      background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+}
+@media (max-width: 576px){
+  .contact-left .contact-right{
+    margin: 0px;
+  }
+  .contact-info p{
+    font-size: 11px;
+  }
+ 
+}
+

@@ -1,0 +1,172 @@
+/* ===== Base Navbar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar.scrolled {
+  background: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeSlideDown 1s ease;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-container{
+  max-width: 1200px;
+  margin: auto;
+
+ 
+}
+
+/* ===== Logo ===== */
+.nav-logo img {
+  height: 60px;
+}
+
+/* ===== Links ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4458dc;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+.nav-links li div {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4458dc;
+  transition: color 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar.scrolled .nav-links li a {
+  color: #2563eb;
+}
+.navbar.scrolled .nav-links li div {
+  color: #2563eb;
+}
+
+.nav-links li div:hover {
+  color: #3b82f6;
+}
+
+/* ===== CTA Button ===== */
+.btn-primary {
+    background: transparent;
+  color: #854fee;
+  padding: 8px 16px;
+  border: 1px solid #4458dc;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 35px;
+
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    color: white;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* ===== Mobile Hamburger ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: rgb(50, 124, 226);
+  transition: 0.3s;
+}
+
+.navbar.scrolled .hamburger span {
+  background: #2563eb;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ===== Mobile Menu ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.829);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 20px;
+    display: none;
+    align-items: start;
+   
+
+  }
+
+  .nav-links li a {
+    color: #2563eb;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

@@ -1,0 +1,81 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="aboutIllustrationTitle">
+  <title id="aboutIllustrationTitle">Illustration showing idea generation and product mockups</title>
+
+  <!-- background blobs -->
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.18"></stop>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0.12"></stop>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#22c55e" stop-opacity="0.12"></stop>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0.06"></stop>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#0b1220" flood-opacity="0.08"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- left abstract blob -->
+  <g transform="translate(60,80)">
+    <path d="M120 20C220 -20 360 10 410 110C460 210 350 320 240 340C130 360 40 240 30 150C20 60 20 50 120 20Z" fill="url(#g1)" filter="url(#softShadow)"></path>
+  </g>
+
+  <!-- right light bulb / idea mark -->
+  <g transform="translate(900,90)">
+    <circle cx="80" cy="80" r="72" fill="#fff" opacity="0.96"></circle>
+    <path d="M80 28c20 0 36 16 36 36 0 18-28 46-28 46H72s-28-28-28-46c0-20 16-36 36-36z" fill="#2563eb"></path>
+    <rect x="60" y="120" width="40" height="22" rx="6" fill="#f3f4f6"></rect>
+    <rect x="72" y="142" width="16" height="6" rx="3" fill="#e5e7eb"></rect>
+    <!-- Rays -->
+    <g opacity="0.9">
+      <rect x="30" y="48" width="8" height="2.8" rx="1.4" transform="rotate(-25 30 48)" fill="#22c55e"></rect>
+      <rect x="115" y="48" width="8" height="2.8" rx="1.4" transform="rotate(25 115 48)" fill="#3b82f6"></rect>
+      <rect x="80" y="2" width="8" height="2.8" rx="1.4" fill="#2563eb"></rect>
+    </g>
+  </g>
+
+  <!-- center mockup cards -->
+  <g transform="translate(260,170)">
+    <!-- big card -->
+    <rect x="0" y="0" width="520" height="320" rx="18" fill="#ffffff" filter="url(#softShadow)"></rect>
+    <!-- header bar -->
+    <rect x="0" y="0" width="520" height="56" rx="18" fill="#f8fafc"></rect>
+    <circle cx="30" cy="28" r="6" fill="#f87171"></circle>
+    <circle cx="56" cy="28" r="6" fill="#facc15"></circle>
+    <circle cx="82" cy="28" r="6" fill="#34d399"></circle>
+    <!-- left column -->
+    <rect x="24" y="80" width="220" height="18" rx="6" fill="#e6eefc"></rect>
+    <rect x="24" y="108" width="420" height="12" rx="6" fill="#eef6ff"></rect>
+    <rect x="24" y="132" width="380" height="12" rx="6" fill="#eef6ff"></rect>
+    <!-- chart -->
+    <g transform="translate(300,80)">
+      <rect x="0" y="48" width="16" height="70" rx="4" fill="#3b82f6"></rect>
+      <rect x="28" y="18" width="16" height="100" rx="4" fill="#2563eb"></rect>
+      <rect x="56" y="0" width="16" height="118" rx="4" fill="#22c55e"></rect>
+    </g>
+    <!-- badges -->
+    <rect x="24" y="196" width="140" height="34" rx="10" fill="#eef2ff"></rect>
+    <rect x="174" y="196" width="140" height="34" rx="10" fill="#f0fdf4"></rect>
+    <rect x="324" y="196" width="140" height="34" rx="10" fill="#fff7ed"></rect>
+  </g>
+
+  <!-- small floating idea cards -->
+  <g transform="translate(120,420)">
+    <rect x="0" y="0" width="180" height="120" rx="12" fill="#fff" opacity="0.98" filter="url(#softShadow)"></rect>
+    <rect x="16" y="16" width="120" height="14" rx="6" fill="#e6eefc"></rect>
+    <rect x="16" y="40" width="140" height="10" rx="5" fill="#eef6ff"></rect>
+  </g>
+
+  <g transform="translate(620,460)">
+    <rect x="0" y="0" width="120" height="90" rx="12" fill="#fff" opacity="0.98" filter="url(#softShadow)"></rect>
+    <circle cx="28" cy="28" r="12" fill="#2563eb"></circle>
+    <rect x="56" y="18" width="48" height="12" rx="6" fill="#eef6ff"></rect>
+  </g>
+
+  <!-- subtle lower blob -->
+  <g transform="translate(320,540)">
+    <path d="M20 120C90 140 240 120 320 80C400 40 440 0 540 0C640 0 760 60 820 120C720 180 560 200 420 200C300 200 120 180 20 120Z" fill="url(#g2)" opacity="0.9"></path>
+  </g>
+</svg>

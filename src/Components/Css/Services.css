@@ -1,0 +1,207 @@
+.services-page {
+  padding: 60px 10%;
+  background-color: white;
+  color: black
+}
+
+.st {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #4458fe;
+   font-family: 'Trebuchet MS';
+}
+
+/* Container */
+.founder-pains {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  padding: 0px 20px;
+  text-align: center;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+.founder-pains h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* Pain Cards Grid */
+.pain-cards {
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+/* Individual Cards */
+.pain-cards .card- {
+  margin: 10px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 25px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.062);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.pain-cards .card-:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.pain-cards .card-:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.pain-cards .card-:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+/* Hover effect */
+.pain-cards .card-:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.445);
+}
+
+/* Subtext */
+.subtext {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .founder-pains h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .founder-pains {
+    padding: 60px 16px;
+  }
+
+  .founder-pains h2 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .pain-cards {
+    gap: 16px;
+  }
+
+  .pain-cards .card-{
+    font-size: 0.9rem;
+    padding: 20px 16px;
+  }
+
+  .founder-pains .subtext {
+    font-size: 0.8rem;
+  }
+}
+
+.sl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sc {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sc:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sc img {
+  width: 100%;
+  height: 280px;
+  object-fit:fill;
+  border-radius: 10px;
+
+}
+
+.scon {
+  flex-grow: 1;
+}
+
+.scon h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.scon p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.sc .type{
+  font-weight: bold;
+}
+.sc:nth-child(1){
+  background-color: #4457fe38;
+}
+
+/* Responsive */
+@media (max-width: 480px){
+  .sl{
+     grid-template-columns: repeat(1, 1fr);
+     padding: 10px;
+
+  }
+  .sl img{
+    height: 150px;
+  }
+  .scon{
+    padding: 5px;
+  }
+  .scon h3{
+    font-size: 1rem;
+  }
+  .scon p{
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1000px){
+  .sl{
+     grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+

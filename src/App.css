@@ -1,0 +1,53 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whtie;
+
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+.App {
+  padding-top: 60px; /* to prevent content hidden behind fixed navbar */
+  min-height: 100vh;
+}
+
+/* Links default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utility: Container max width */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Scrollbar styling for modern browsers (optional) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(180, 177, 177);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(170, 158, 158);
+}

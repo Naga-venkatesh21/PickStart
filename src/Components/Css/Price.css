@@ -1,0 +1,49 @@
+.pricing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.pricing-card {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.pricing-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card p {
+  font-size: 1.05rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.highlight-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.benefits span {
+  font-size: 1rem;
+  color: #3a3c3c;
+}
+
+
