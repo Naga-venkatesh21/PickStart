@@ -74,7 +74,7 @@ const service = [
 const About = () => {
    const location = useLocation();
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [ setIsOpen] = useState(false);
     useEffect(() => {
   AOS.init({ duration: 800, once: true });
 }, []);

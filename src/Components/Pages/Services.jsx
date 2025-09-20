@@ -1,4 +1,3 @@
-import React from "react";
 import "../Css/Services.css";
 import Saas from "../../Assets/saas.jpg"
 import Working from "../../Assets/working.svg"
@@ -7,7 +6,6 @@ import Webdev from "../../Assets/web-dev.svg"
 import App from "../../Assets/app.jpg"
 import Probsol from "../../Assets/probsol.svg"
 import LogoDe from "../../Assets/logo-design.svg"
-import Pitch from "../../Assets/6205275.jpg"
 import Ideaval from "../../Assets/ideaval.png"
 import Aiagent from "../../Assets/aiagent.svg"
 
