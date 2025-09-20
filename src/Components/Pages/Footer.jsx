@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 
 const Footer = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [, setIsOpen] = useState(false);
+  const [, setIsScrolled] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -59,12 +59,12 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/" onClick={() => handleScrollTo("home")}>Home</Link></li>
-            <li><a onClick={() => handleScrollTo("about")}>About</a></li>
+            <li><button onClick={() => handleScrollTo("about")}>About</button></li>
             <li><Link to="/services" onClick={() => setIsOpen(false)}>
                   Services
                 </Link></li>
-            <li><a onClick={() => handleScrollTo("why")}>Why</a></li>
-            <li><a onClick={() => handleScrollTo("contact")}>Contact</a></li>
+            <li><button onClick={() => handleScrollTo("why")}>Why</button></li>
+            <li><button onClick={() => handleScrollTo("contact")}>Contact</button></li>
           </ul>
         </div>
             
@@ -80,8 +80,8 @@ const Footer = () => {
           <h3>Support Us</h3>
           <div className="social-icons">
            
-            <a href="https://www.linkedin.com/company/pickstart/"><FaLinkedinIn /></a>
-            <a href="https://www.instagram.com/pickstart_/?utm_source=qr&r=nametag"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/company/pickstart/" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+            <a href="https://www.instagram.com/pickstart_/?utm_source=qr&r=nametag" target="_blank" rel="noreferrer"><FaInstagram /></a>
           </div>
         </div>
       </div>

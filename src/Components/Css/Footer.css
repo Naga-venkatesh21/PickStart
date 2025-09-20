@@ -43,18 +43,32 @@
   margin-bottom: 8px;
 
 }
-
-.footer-links ul li a {
+.footer-links ul li:first-child,
+.footer-links ul li:nth-child(3){
+  padding-left: 5px;
   color: black;
-  font-weight: 600;
-  text-decoration: none;
   opacity: 0.8;
-  transition: opacity 0.3s;
 }
 
-.footer-links ul li a:hover {
+.footer-links ul li button {
+  color: black;
+  opacity: 0.7;
+  font-size: 15px;
+  transition: opacity 0.3s;
+  border: none;
+  background: none;
+  text-align: left;
+
+}
+
+.footer-links ul li:hover {
   opacity: 1;
   color: #835fee;
+}
+.footer-links ul li button:hover {
+  opacity: 1;
+  color: #835fee;
+  cursor: pointer;
 }
 
 .footer-contact p {
